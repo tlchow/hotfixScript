@@ -1,4 +1,6 @@
 @echo off
+if not exist "log" mkdir log
+
 call _logUser.bat HotfixBackup
 echo calling _hotFixJarBackup.bat %uname% >> log\HotFix.log
 call _hotFixJarBackup.bat %uname% >> log\HotFix.log 2>&1

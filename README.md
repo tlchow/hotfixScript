@@ -1,7 +1,7 @@
 # hotfixScript
-Dos Hotfix Script for Websphere
+Windows Hotfix Script for Websphere
 
-Edit _setupEnv.bat to config the path
+Edit _setupEnv.bat to config the path, support multiple destination (Seperated by ";")
 
 For Jar file, it will find and replace all the jar file in destination and only need to place the jar file in "srcJarFolder" folder
   

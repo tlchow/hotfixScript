@@ -1,7 +1,7 @@
-set devFolder=i:\t3\
-set devFileList=i:\t3\in.txt
-set bckupWebFolder=i:\backup\hotFix\web
-set backupJarFolder=i:\backup\hotFix\jar
-set srcWebFolder=i:\t2\webFile
-set srcJarFolder=i:\t2\jarFile
-set destFolder=i:\t
+set devFolder=C:\HotFixTest\dev
+set devFileList=C:\HotFixTest\dev\in.txt
+set bckupWebFolder=C:\HotFixTest\backup\hotFix\webFile
+set backupJarFolder=C:\HotFixTest\backup\hotFix\jarFile
+set srcWebFolder=c:\HotFixTest\src\webFile
+set srcJarFolder=c:\HotFixTest\src\jarFile
+set destFolder=C:\HotFixTest\server;C:\HotFixTest\server2
