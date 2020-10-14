@@ -6,10 +6,11 @@ setlocal EnableDelayedExpansion
 for /f %%f in ('dir /S /B /A:-D "%srcWebFolder%"') do (
 	set file=%%f
 	set file=!file:%srcWebFolder%\=!
-	for %%d in (%destWebFolder%) do (
+	set break=
+	for %%d in (%destWebFolder%) do if not defined break (
 		echo xcopy "%%d\!file!" "%backupWebFolder%\!file!" /Y 
 		echo F|xcopy "%%d\!file!" "%backupWebFolder%\!file!" /Y 
-		break
+		set break=yes
 	)
 )
 
