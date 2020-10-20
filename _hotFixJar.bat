@@ -8,7 +8,7 @@ for /f %%f in ('dir /B %srcJarFolder%') do (
 
 	for /f %%d in (%destJarFileList%) do (
 		set destFile=%%d
-		set destFileAfterTrim=!destFile:%%f=!
+		set destFileAfterTrim=!destFile:\%%f=!
 		if not x!destFileAfterTrim! == x!destFile! (
 			echo copy "%srcJarFolder%\%%f" "!destFile!" 
 			copy "%srcJarFolder%\%%f" "!destFile!" 
